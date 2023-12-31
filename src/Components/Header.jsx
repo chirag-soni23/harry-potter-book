@@ -15,7 +15,7 @@ function Header() {
     >
       <div className="container-fluid">
         <Link to={"/"} className="navbar-brand" href="#">
-          Navbar
+          Book Store
         </Link>
         <button
           className="navbar-toggler"
