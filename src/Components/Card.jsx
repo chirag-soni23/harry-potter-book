@@ -31,7 +31,6 @@ function Card() {
 
       books.map((book) => (
         <div key={book.id} className="card">
-          {/* ... (other card content) */}
           <img
             src={
               book.volumeInfo.imageLinks?.thumbnail || "placeholder-image-url"
