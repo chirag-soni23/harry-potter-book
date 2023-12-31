@@ -10,12 +10,17 @@ html, body {
     width: 100%;
     background-color: #242121;
 }
+#root{
+    height: 100%;
+    width: 100%;
+    background-color: #242121;
+
+}
 
 .card-container {
     height: 100%;
     width: 100%;
     background-color: #242121;
-
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -23,9 +28,10 @@ html, body {
     align-items: center;
     padding: 50px;
 
-
 }
-
+.loading img{
+    width: 100px;
+}
 .card {
     width: 18rem;
     margin-bottom: 20px;

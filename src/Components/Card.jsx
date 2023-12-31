@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import {  useNavigate } from "react-router-dom";
+import Loading from "./Loading";
 
 function Card() {
   const apiUrl = "https://www.googleapis.com/books/v1/volumes?q=harry+potter";
@@ -26,7 +27,9 @@ function Card() {
 
   return (
     <div className="card-container">
-      {books.map((book) => (
+      {books.length === 0 ? <Loading/> :
+
+      books.map((book) => (
         <div key={book.id} className="card">
           {/* ... (other card content) */}
           <img

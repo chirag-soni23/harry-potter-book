@@ -4,14 +4,7 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <nav
-      className="navbar navbar-expand-lg bg-body-tertiary"
-      style={{
-        position: "sticky",
-        top: "0",
-        left: "0",
-        right: "0",
-        zIndex: "9999",
-      }}
+      className="navbar navbar-expand-lg bg-body-tertiary "
     >
       <div className="container-fluid">
         <Link to={"/"} className="navbar-brand" href="#">
