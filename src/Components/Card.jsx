@@ -11,7 +11,7 @@ function Card() {
     async function fetchBooks() {
       try {
         const { data } = await axios.get(apiUrl);
-        setBooks(data.items || []);
+        setBooks(data.items);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
