@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Input from "./Input";
 function Header() {
   return (
     <nav
@@ -34,12 +35,7 @@ function Header() {
             </li>
           </ul>
           <form className="d-flex" role="search">
-            <input
-              className="form-control me-2"
-              type="search"
-              placeholder="Search Books"
-              aria-label="Search"
-            />
+           <Input/>
             <button className="btn btn-outline-success" type="submit">
               Search
             </button>
